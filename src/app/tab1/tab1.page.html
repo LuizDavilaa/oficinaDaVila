@@ -1,17 +1,129 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="blue">
     <ion-title>
-      Tab 1
+      Papelaria
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="grey">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar placeholder="Buscar materiais"></ion-searchbar>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://a-static.mlcdn.com.br/618x463/post-it-tropical-76-x-76-mm-kit-com-5-blocos-com-90-folhas-cada-3m/grafittiartes/25835/99414dadcd3c74191ba0d7a0b7ed34ac.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Kit Post It</h1>
+        <p>Kit com diversos tipos de post it</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">35.99</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://cdn.ultrafarma.com.br/static/produtos/817383/large-637480381305465411-817383_4.png">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Kit Máscara</h1>
+        <p>Caixa Máscaras Descartáveis 100 unidades</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">5.80</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://images.tcdn.com.br/img/img_prod/785098/caneca_hashtag_profissao_jornalismo_ludi_817551_1_76c8cec190b86158ecc04ebc57a1af47.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Caneca Jornalismo</h1>
+        <p>Caneca edição Profissões - Jornalismo</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">49.99</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_828193-MLB42123914304_062020-O.webp">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Kit Escritório</h1>
+        <p>Kit com lixo e objetos para escritório</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">99.99</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/326/795/products/placa-decorativa-to-de-bacon-vida1-4d8285d3e88fa1120f15421472669170-1024-1024.jpg">
+    </ion-thumbnail>
+    <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Placa Decorativa</h1>
+        <p>Placa decorativa "Tô de bacon a vida"</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">14.99</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://pamaris.com.br/wp-content/uploads/2017/11/7891027147983.jpg">
+    </ion-thumbnail>
+      <ion-label>
+      <div class="item-papel ion-text-wrap">
+        <h1>Caderno 1 matéria</h1>
+        <p>Caderno escolar 1 matéria</p>
+      </div>
+    </ion-label>
+      <ion-badge slot="end" color="light">
+        <div class="item-preco">
+          <p class="moeda">R$</p>
+          <p class="preco">4.87</p>
+        </div>
+      </ion-badge>
+  </ion-item>
+
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

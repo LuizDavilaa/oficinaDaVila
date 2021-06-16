@@ -1,17 +1,54 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="blue">
     <ion-title>
-      Tab 3
+      Quem somos?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="grey">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item lines="full" color="grey">
+    <ion-avatar slot="end">
+      <img src="https://scontent.fbau1-1.fna.fbcdn.net/v/t1.6435-9/93929271_103913727965694_2413580923804057600_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=cBdDcUYftfkAX_FLuOQ&_nc_ht=scontent.fbau1-1.fna&oh=6fcd1d7446ba61b357539c4217c29137&oe=60CB37D2">
+    </ion-avatar>
+    <ion-label>
+      <div class="item-about ion-text-wrap">
+        <h1>Oficina da Vila</h1>
+        <h2>Atuando desde o ano de 2019, a Oficina da Vila surge em Lençóis Paulista, interior de São Paulo. Mesmo sendo uma empresa pequena, todos os trabalhos são entregues com muito carinho e atenção.</h2>
+        <h2>Lençóis Paulista-SP</h2>
+        <h2>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          (14) 99864-1204
+        </h2>
+        <h2>
+          <ion-icon name="logo-facebook"></ion-icon>Oficina Da Vila
+        </h2>
+        <h2>
+          <ion-icon name="mail-sharp"></ion-icon>
+            <a href="mailto:oficinadavila@gmail.com">
+              oficinadavila@gmail.com
+            </a>
+        </h2>
+      </div>
+    </ion-label>
+  </ion-item>
+
+  <div class="ion-text-center">
+    <h4>Gostou? Entre em contato conosco ou escaneie o código abaixo e entre em contato conosco pelo Instagram</h4>
+      <img src="assets/qrcode.png">
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
 </ion-content>
